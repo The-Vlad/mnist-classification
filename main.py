@@ -8,8 +8,8 @@ from torchvision.transforms import ToTensor
 import matplotlib.pyplot as plt
 
 # Загрузим данные из набора MNIST
-train_dataset = datasets.MNIST(root='./data/train', train=True, download=False, transform=ToTensor())
-test_dataset = datasets.MNIST(root='./data/test', train=False, download=False, transform=ToTensor())
+train_dataset = datasets.MNIST(root='./data/train', train=True, download=True, transform=ToTensor())
+test_dataset = datasets.MNIST(root='./data/test', train=False, download=True, transform=ToTensor())
 print('Размер обучающего датасета: ', len(train_dataset))
 print('Размер тестирующего датасета: ', len(test_dataset))
 
